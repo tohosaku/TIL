@@ -30,3 +30,16 @@ vim -q error.txt
 ```
 
 で vim起動時に QuickFixに流しこむことができる。
+
+vim起動後に既存のファイルをQuickFixに読みこむ場合
+
+```
+:cfile
+```
+を使用する。findコマンドの出力をそのまま使いたい場合
+
+```
+:set errorformat=%f
+```
+
+とした上で読みこむこと。
