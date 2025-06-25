@@ -1,0 +1,8 @@
+# フォルダの除外方法
+
+* ripgrep で特定フォルダを除外するには、 -g '!dirname' とする。
+* vimrcの設定は以下。
+
+```
+let &grepprg = 'rg -g "!.git/" --vimgrep --hidden'
+```
